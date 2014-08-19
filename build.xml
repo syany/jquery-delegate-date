@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="$.Dalegate, $.Date Task" default="build" basedir=".">
+	<property environment="env"/>
+	<property file="build.properties"/>
+
+    <!-- classpath -->
+    <path id="yuicompressor.classpath">
+        <fileset dir="${basedir}/lib">
+            <include name="yuicompressor-2.4.2.jar" />
+            <include name="yuicompressor-taskdef-1.0.jar" />
+        </fileset>
+    </path>
+
+	<taskdef resource="yuicompressor.tasks" classpathref="yuicompressor.classpath" />
+
+	<target name="init">
+		<tstamp/>
+		<mkdir dir="${dist.dir}"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="${dist.dir}"/>
+	</target>
+
+	<target depends="init" name="original-build">
+		<mkdir dir="${basedir}/${dist.dir}/org"/>
+		<copy todir="${basedir}/${dist.dir}/org">
+			<fileset dir="${basedir}/${src.dir}" includes="**/*.js"/>
+		</copy>
+	</target>
+
+	<target depends="init" name="minify-build">
+		<mkdir dir="${basedir}/${dist.dir}/min"/>
+		<yuicompressor linebreak="-1" todir="${basedir}/${dist.dir}/min">
+			<fileset dir="${basedir}/${src.dir}">
+				<include name="jquery.delegate*.js"/>
+				<exclude name="*-min.js"/>
+			</fileset>
+			<mapper type="glob" from="*.js" to="*-min.js"/>
+		</yuicompressor>
+	</target>
+	<target depends="original-build,minify-build" name="build"/>
+</project>

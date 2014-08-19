@@ -1,0 +1,3515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - $.Date</title>
+
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+	padding: 8px;
+}
+
+#content
+{
+	margin-left: 190px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+	background-color: #7F8FB1;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px #7F8FB1 solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><a href="../symbols/%24.Date.html">$.Date</a></li>
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class $.Date
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				<br />Extends
+					$<pre class="syntaxbox language-html" data-prism-prevent-line-number="1">    new Date()    new Date(value)    new Date(dateString)    new Date(year, month, day [, hour, minute, second, millisecond])</pre>, $.Delegate.<br />
+				
+			
+				日付型委譲クラス<h2 id="Summary" name="Summary">概要</h2><p>日付や時刻を扱うことが可能な、JavaScript の <code>Date</code> インスタンスを生成します。</p><h2 id="Syntax" name="Syntax">構文</h2>
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/WebContent_dist_jquery.delegate.date-1.0.js.html">jquery.delegate.date-1.0.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class $.Date.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/%24.Date.html#constructor">$.Date</a></b>(value, dateString, year)
+							</div>
+							<div class="description">本クラスはDete型の委譲クラスです。本クラス内のメソッドのほか、Dateクラス内の以下のクラス関数、メンバ関数およびプロパティを利用することができます。      <dl>      <dt>getFullYear</dt>      <dd></dd>      <dt>getHours</dt>      <dd></dd>      <dt>getMilliseconds</dt>      <dd></dd>      <dt>getMinutes</dt>      <dd></dd>      <dt>getSeconds</dt>      <dd></dd>      <dt>getTime</dt>      <dd></dd>      <dt>getUTCFullYear</dt>      <dd></dd>      <dt>getUTCHours</dt>      <dd></dd>      <dt>getUTCMilliseconds</dt>      <dd></dd>      <dt>getUTCMinutes</dt>      <dd></dd>      <dt>getUTCSeconds</dt>      <dd></dd>      <dt>getYear</dt>      <dd></dd>      <dt>lastDayList: Array[12]      <dt>locale: "ja"      <dt>name: "$.Date"      <dt>setHours</dt>      <dd></dd>      <dt>setMilliseconds</dt>      <dd></dd>      <dt>setMinutes</dt>      <dd></dd>      <dt>setSeconds</dt>      <dd></dd>      <dt>setTime</dt>      <dd></dd>      <dt>setUTCHours</dt>      <dd></dd>      <dt>setUTCMilliseconds</dt>      <dd></dd>      <dt>setUTCMinutes</dt>      <dd></dd>      <dt>setUTCSeconds</dt>      <dd></dd>      <dt>toDateString</dt>      <dd></dd>      <dt>toGMTString</dt>      <dd></dd>      <dt>toISOString</dt>      <dd></dd>      <dt>toJSON</dt>      <dd></dd>      <dt>toTimeString</dt>      <dd></dd>      <dt>toUTCString</dt>      <dd></dd>      </dl></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class $.Date.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/%24.Date.html#defaultLocale">defaultLocale</a></b>
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								$.Date.<b><a href="../symbols/%24.Date.html#.langs">langs</a></b>
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class $.Date.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.$.Date.isDate">$.Date.isDate</a></b>(arg01, month, day)
+								</div>
+								<div class="description">日付判定<br>対象引数が日付かどうかを判定する。<br>new Dateで使用可能な引数パターンをすべて使用できます。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.$.Date.isLeapYear">$.Date.isLeapYear</a></b>(year)
+								</div>
+								<div class="description">閏年判定。<br>対象年が閏年かどうかを判定します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addDay">addDay</a></b>(加減値)
+								</div>
+								<div class="description">現在の日を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addHours">addHours</a></b>(加減値)
+								</div>
+								<div class="description">現在の時を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addMilliseconds">addMilliseconds</a></b>(加減値)
+								</div>
+								<div class="description">現在のミリ秒を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addMinutes">addMinutes</a></b>(加減値)
+								</div>
+								<div class="description">現在の分を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addMonth">addMonth</a></b>(加減値)
+								</div>
+								<div class="description">現在の月を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addSeconds">addSeconds</a></b>(加減値)
+								</div>
+								<div class="description">現在の秒を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#addYear">addYear</a></b>(加減値)
+								</div>
+								<div class="description">現在の年を加減します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#clone">clone</a></b>()
+								</div>
+								<div class="description">対象$.Dateオブジェクトんクローンを作成する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#compareDate">compareDate</a></b>(targetData)
+								</div>
+								<div class="description">日付（年月日まで）を比較します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#compareTime">compareTime</a></b>(targetData)
+								</div>
+								<div class="description">日付（年月日時分秒.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#format">format</a></b>(fmt)
+								</div>
+								<div class="description">現在の日付情報を指定したフォーマットで出力する。<br>パターンは、Java言語。SimpleDateFormatパターンに近い。
+<table> <tbody>             <tr>             <td>文字 </td>             <td>説明 </td>             <td>例 </td>             </tr>             <tr>             <td>G</td>             <td>紀元</td>             <td>AD</td>             </tr>             <tr>             <td>y</td>             <td>年</td>             <td> 1996, 96</td>             </tr>             <tr>             <td>M</td>             <td>月</td>             <td>July, Jul, 07</td>             </tr>             <tr>             <td>w</td>             <td>年における週</td>             <td> 27</td>             </tr>             <tr>             <td>W</td>             <td>月における週</td>             <td>2</td>             </tr>             <tr>             <td>D</td>             <td>年における日</td>             <td>189</td>             </tr>             <tr>             <td>d</td>             <td>月における日</td>             <td> 10</td>             </tr>             <tr>             <td>F</td>             <td>月における曜日</td>             <td>2</td>             </tr>             <tr>             <td>E</td>             <td>曜日</td>             <td> Tuesday, Tue</td>             </tr>             <tr>             <td>a</td>             <td>午前/午後</td>             <td>PM</td>             </tr>             <tr>             <td>H</td>             <td>一日における時(0～23)</td>             <td>0</td>             </tr>             <tr>             <td>k</td>             <td>一日における時(1～24)</td>             <td> 24</td>             </tr>             <tr>             <td>K</td>             <td>午前/午後の時(0～11)</td>             <td>0</td>             </tr>             <tr>             <td>h</td>             <td>午前/午後の時(1～12)</td>             <td> 12</td>             </tr>             <tr>             <td>m</td>             <td>分</td>             <td> 30</td>             </tr>             <tr>             <td>s</td>             <td>秒</td>             <td>55</td>             </tr>             <tr>             <td>S</td>             <td>ミリ秒</td>             <td>978</td>             </tr>             <tr>             <td>z</td>             <td>タイムゾーン</td>             <td>Pacific Standard Time, PST, GMT-08:00</td>             </tr>             <tr>             <td>Z</td>             <td>タイムゾーン</td>             <td>-0800</td>             </tr>             </tbody> </table>             <dl>             <dt>y</dt>             <dd>年数（yyyy：2013, yy:13)</dd>             </dl></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.format">format</a></b>(fmt)
+								</div>
+								<div class="description">現在値もしくは第2引数以降で指定した日付のフォーマットを第一引数の文字列形式で出力</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getAmPm">getAmPm</a></b>()
+								</div>
+								<div class="description">午前午後を取得します</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getDate">getDate</a></b>()
+								</div>
+								<div class="description">日付を表示する。<br>Date型のtoDateStringメソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getDay">getDay</a></b>()
+								</div>
+								<div class="description">日を表示する。<br>Date型のgetDate委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getDayOfYear">getDayOfYear</a></b>()
+								</div>
+								<div class="description">対象年の何日目かを出力します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getEra">getEra</a></b>()
+								</div>
+								<div class="description">暦を出力する。<br>ロケールにおいて、対象となる暦を設定する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getLocale">getLocale</a></b>()
+								</div>
+								<div class="description">現在のロケール情報を取得する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getLocaleLabel">getLocaleLabel</a></b>(key, subKey, defaultFlag)
+								</div>
+								<div class="description">対象のロケールラベル情報を取得</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getMonth">getMonth</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">対象ロケールの文字列もしくは数字で月を表示する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getMonthString">getMonthString</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">対象ロケールの文字列で月を表示する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getTimezoneOffset">getTimezoneOffset</a></b>()
+								</div>
+								<div class="description">タイムゾーンを出力する。(分単位)<br>Date型のgetTimezoneOffsetだが、符号を逆にして表示する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getTimezoneOffsetTime">getTimezoneOffsetTime</a></b>()
+								</div>
+								<div class="description">タイムゾーンを出力する。(ミリ秒単位)<br>Date型のgetTimezoneOffsetだが、符号を逆にして表示する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getUTCDay">getUTCDay</a></b>()
+								</div>
+								<div class="description">日を表示する。<br>Date型のgetUTCDate委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getUTCMonth">getUTCMonth</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">対象ロケールの文字列もしくは数字で月を表示する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getUTCMonthString">getUTCMonthString</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">対象ロケールの文字列で月を表示する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getUTCWDay">getUTCWDay</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">曜日を文字列もしくは数字で出力する。<br>Date型のgetUTCDay委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getUTCWDayString">getUTCWDayString</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">対象ロケールで曜日を出力する</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getWDay">getWDay</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">曜日を文字列もしくは数字で出力する。<br>Date型のgetDay委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getWDayString">getWDayString</a></b>(min|abbr|normal)
+								</div>
+								<div class="description">対象ロケールで曜日を出力する</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getWeekOfMonth">getWeekOfMonth</a></b>()
+								</div>
+								<div class="description">対象月の週数を出力します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getWeekOfYear">getWeekOfYear</a></b>()
+								</div>
+								<div class="description">対象年の週数を出力します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#isHoliday">isHoliday</a></b>()
+								</div>
+								<div class="description">休日判定します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#isLeapYear">isLeapYear</a></b>()
+								</div>
+								<div class="description">閏年を判定します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#roundDays">roundDays</a></b>()
+								</div>
+								<div class="description">現在設定されている日付から、引数の日付までの日数を出力する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#roundHolidays">roundHolidays</a></b>()
+								</div>
+								<div class="description">対象範囲の休日数を求める</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#roundWorkdays">roundWorkdays</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setDate">setDate</a></b>(パースできる日付文字列)
+								</div>
+								<div class="description">日付を設定します<br>パースできる文字列を指定します<br>setTimeの委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setDay">setDay</a></b>(日)
+								</div>
+								<div class="description">日を設定します。<br>setDateの委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setFullYear">setFullYear</a></b>(fullYear)
+								</div>
+								<div class="description">完全な年を設定します。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setLastWeekday">setLastWeekday</a></b>(wday)
+								</div>
+								<div class="description">対象月の最終N曜日を設定する</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setLocale">setLocale</a></b>(loc)
+								</div>
+								<div class="description">ロケール情報を再設定します。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setMonth">setMonth</a></b>(month, label[option])
+								</div>
+								<div class="description">月を設定します.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setMonthEnd">setMonthEnd</a></b>()
+								</div>
+								<div class="description">現在の年月から月末を設定する。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setNow">setNow</a></b>()
+								</div>
+								<div class="description">現在時刻を再設定する。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setNumberWeekday">setNumberWeekday</a></b>(number, wday, notNextMonth)
+								</div>
+								<div class="description">第X週N曜日を設定する</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setUTCDate">setUTCDate</a></b>(パースできる日付文字列)
+								</div>
+								<div class="description">日付を設定します<br>パースできる文字列を指定します<br>setUTCTimeの委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setUTCDay">setUTCDay</a></b>(日)
+								</div>
+								<div class="description">日を設定します。<br>setUTCDateの委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setUTCFullYear">setUTCFullYear</a></b>(fullYear)
+								</div>
+								<div class="description">完全な年を設定します。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setUTCMonth">setUTCMonth</a></b>(month, label[option])
+								</div>
+								<div class="description">月を設定します.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setUTCYear">setUTCYear</a></b>(year)
+								</div>
+								<div class="description">年設定。<br>引数の年を設定します。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#setYear">setYear</a></b>(year)
+								</div>
+								<div class="description">年設定。<br>引数の年を設定します。<br></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#syncNTP">syncNTP</a></b>()
+								</div>
+								<div class="description">ローカル時刻をNTPと同期して設定する。<br>json-time App使用。内部Ajaxは同期通信する。<br>jQuery.Deferred使用(done/fail/always)</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#toLocaleDateString">toLocaleDateString</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#toLocaleString">toLocaleString</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#toLocaleTimeString">toLocaleTimeString</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#toTimezoneOffsetString">toTimezoneOffsetString</a></b>()
+								</div>
+								<div class="description">タイムゾーンを（[+-]hhMM）形式の文字列で表示します</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.toWDayNumber">toWDayNumber</a></b>(曜日文字列, 対象ラベル（normal)
+								</div>
+								<div class="description">対象文字列から、対象の曜日に紐づく数字を返却します。</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#trancateDay">trancateDay</a></b>()
+								</div>
+								<div class="description">日付以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/01 00:00:00.000</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#trancateHours">trancateHours</a></b>()
+								</div>
+								<div class="description">時以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 00:00:00.000</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#trancateMilliseconds">trancateMilliseconds</a></b>()
+								</div>
+								<div class="description">ミリ秒以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 07:09:09.000</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#trancateMinutes">trancateMinutes</a></b>()
+								</div>
+								<div class="description">分以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 07:00:00.000</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#trancateMonth">trancateMonth</a></b>()
+								</div>
+								<div class="description">月以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/01/01 00:00:00.000</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#trancateSeconds">trancateSeconds</a></b>()
+								</div>
+								<div class="description">秒以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 07:09:00.000</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>$.Date</b>(value, dateString, year)
+				</div>
+				
+				<div class="description">
+					本クラスはDete型の委譲クラスです。本クラス内のメソッドのほか、Dateクラス内の以下のクラス関数、メンバ関数およびプロパティを利用することができます。      <dl>      <dt>getFullYear</dt>      <dd></dd>      <dt>getHours</dt>      <dd></dd>      <dt>getMilliseconds</dt>      <dd></dd>      <dt>getMinutes</dt>      <dd></dd>      <dt>getSeconds</dt>      <dd></dd>      <dt>getTime</dt>      <dd></dd>      <dt>getUTCFullYear</dt>      <dd></dd>      <dt>getUTCHours</dt>      <dd></dd>      <dt>getUTCMilliseconds</dt>      <dd></dd>      <dt>getUTCMinutes</dt>      <dd></dd>      <dt>getUTCSeconds</dt>      <dd></dd>      <dt>getYear</dt>      <dd></dd>      <dt>lastDayList: Array[12]      <dt>locale: "ja"      <dt>name: "$.Date"      <dt>setHours</dt>      <dd></dd>      <dt>setMilliseconds</dt>      <dd></dd>      <dt>setMinutes</dt>      <dd></dd>      <dt>setSeconds</dt>      <dd></dd>      <dt>setTime</dt>      <dd></dd>      <dt>setUTCHours</dt>      <dd></dd>      <dt>setUTCMilliseconds</dt>      <dd></dd>      <dt>setUTCMinutes</dt>      <dd></dd>      <dt>setUTCSeconds</dt>      <dd></dd>      <dt>toDateString</dt>      <dd></dd>      <dt>toGMTString</dt>      <dd></dd>      <dt>toISOString</dt>      <dd></dd>      <dt>toJSON</dt>      <dd></dd>      <dt>toTimeString</dt>      <dd></dd>      <dt>toUTCString</dt>      <dd></dd>      </dl>
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								<span class="light fixedFont">{Number}</span>  <b>value</b>
+								
+							</dt>
+								<dd>1 January 1970 00:00:00 UTC (Unix Epoch).からの<span class="short_text" id="result_box" lang="ja"><span>ミリ秒数を</span><span>表す整数値です。</span></span></dd>
+						
+							<dt>
+								<span class="light fixedFont">{String}</span>  <b>dateString</b>
+								
+							</dt>
+								<dd>日付を表す文字列値です。文字列は <a href="https://developer.mozilla.org/ja/JavaScript/Reference/Global_Objects/Date/parse"       title="en/JavaScript/Reference/Global_Objects/Date/parse">parse</a> メソッドによる認識可能な形式でなければなりません (<a class="external"       href="http://tools.ietf.org/html/rfc2822#page-14" title="http://tools.ietf.org/html/rfc2822#page-14">IETF-compliant RFC 2822 timestamps</a>).</dd></dd>
+						
+							<dt>
+								<span class="light fixedFont">{Number}</span>  <b>year</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name="defaultLocale"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{String}</span>
+					<b>defaultLocale</b>
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".langs"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.Date.</span><b>langs</b>
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name=".$.Date.isDate"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.Date.</span><b>$.Date.isDate</b>(arg01, month, day)
+					
+					</div>
+					<div class="description">
+						日付判定<br>対象引数が日付かどうかを判定する。<br>new Dateで使用可能な引数パターンをすべて使用できます。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>arg01</b>
+									
+								</dt>
+								<dd>(year)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>month</b>
+									
+								</dt>
+								<dd>(option)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>day</b>
+									
+								</dt>
+								<dd>(option)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>...</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>引数がない場合。</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>日付型です(true)/日付型でない(false)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".$.Date.isLeapYear"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.Date.</span><b>$.Date.isLeapYear</b>(year)
+					
+					</div>
+					<div class="description">
+						閏年判定。<br>対象年が閏年かどうかを判定します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>year</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>閏年です(true)/閏年でない(false)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addDay</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在の日を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addHours"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addHours</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在の時を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addMilliseconds"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addMilliseconds</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在のミリ秒を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addMinutes"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addMinutes</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在の分を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addMonth</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在の月を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addSeconds"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addSeconds</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在の秒を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addYear</b>(加減値)
+					
+					</div>
+					<div class="description">
+						現在の年を加減します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Numeric}</span> <b>加減値</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Error}</span>  <b></b>
+								</dt>
+								<dd>第一引数が数値出ない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="clone"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>clone</b>()
+					
+					</div>
+					<div class="description">
+						対象$.Dateオブジェクトんクローンを作成する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="compareDate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>compareDate</b>(targetData)
+					
+					</div>
+					<div class="description">
+						日付（年月日まで）を比較します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>targetData</b>
+									
+								</dt>
+								<dd>比較対象</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>一致(0)/引数が未来(>0)/引数が過去(-1)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="compareTime"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>compareTime</b>(targetData)
+					
+					</div>
+					<div class="description">
+						日付（年月日時分秒.ミリ秒）を比較します
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>targetData</b>
+									
+								</dt>
+								<dd>比較対象</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>一致(0)/引数が未来(>0)/引数が過去(-1)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="format"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>format</b>(fmt)
+					
+					</div>
+					<div class="description">
+						現在の日付情報を指定したフォーマットで出力する。<br>パターンは、Java言語。SimpleDateFormatパターンに近い。
+<table> <tbody>             <tr>             <td>文字 </td>             <td>説明 </td>             <td>例 </td>             </tr>             <tr>             <td>G</td>             <td>紀元</td>             <td>AD</td>             </tr>             <tr>             <td>y</td>             <td>年</td>             <td> 1996, 96</td>             </tr>             <tr>             <td>M</td>             <td>月</td>             <td>July, Jul, 07</td>             </tr>             <tr>             <td>w</td>             <td>年における週</td>             <td> 27</td>             </tr>             <tr>             <td>W</td>             <td>月における週</td>             <td>2</td>             </tr>             <tr>             <td>D</td>             <td>年における日</td>             <td>189</td>             </tr>             <tr>             <td>d</td>             <td>月における日</td>             <td> 10</td>             </tr>             <tr>             <td>F</td>             <td>月における曜日</td>             <td>2</td>             </tr>             <tr>             <td>E</td>             <td>曜日</td>             <td> Tuesday, Tue</td>             </tr>             <tr>             <td>a</td>             <td>午前/午後</td>             <td>PM</td>             </tr>             <tr>             <td>H</td>             <td>一日における時(0～23)</td>             <td>0</td>             </tr>             <tr>             <td>k</td>             <td>一日における時(1～24)</td>             <td> 24</td>             </tr>             <tr>             <td>K</td>             <td>午前/午後の時(0～11)</td>             <td>0</td>             </tr>             <tr>             <td>h</td>             <td>午前/午後の時(1～12)</td>             <td> 12</td>             </tr>             <tr>             <td>m</td>             <td>分</td>             <td> 30</td>             </tr>             <tr>             <td>s</td>             <td>秒</td>             <td>55</td>             </tr>             <tr>             <td>S</td>             <td>ミリ秒</td>             <td>978</td>             </tr>             <tr>             <td>z</td>             <td>タイムゾーン</td>             <td>Pacific Standard Time, PST, GMT-08:00</td>             </tr>             <tr>             <td>Z</td>             <td>タイムゾーン</td>             <td>-0800</td>             </tr>             </tbody> </table>             <dl>             <dt>y</dt>             <dd>年数（yyyy：2013, yy:13)</dd>             </dl>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>fmt</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".format"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.Date.</span><b>format</b>(fmt)
+					
+					</div>
+					<div class="description">
+						現在値もしくは第2引数以降で指定した日付のフォーマットを第一引数の文字列形式で出力
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>fmt</b>
+									
+								</dt>
+								<dd>出力形式</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>出力形式に沿った文字列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAmPm"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getAmPm</b>()
+					
+					</div>
+					<div class="description">
+						午前午後を取得します
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getDate</b>()
+					
+					</div>
+					<div class="description">
+						日付を表示する。<br>Date型のtoDateStringメソッド
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>日付文字列（EEE MMM dd yyyy）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getDay</b>()
+					
+					</div>
+					<div class="description">
+						日を表示する。<br>Date型のgetDate委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>日文字列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDayOfYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getDayOfYear</b>()
+					
+					</div>
+					<div class="description">
+						対象年の何日目かを出力します。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getEra"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getEra</b>()
+					
+					</div>
+					<div class="description">
+						暦を出力する。<br>ロケールにおいて、対象となる暦を設定する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLocale"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getLocale</b>()
+					
+					</div>
+					<div class="description">
+						現在のロケール情報を取得する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>ロケール文字列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLocaleLabel"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getLocaleLabel</b>(key, subKey, defaultFlag)
+					
+					</div>
+					<div class="description">
+						対象のロケールラベル情報を取得
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>key</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<b>subKey</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<b>defaultFlag</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>ロケールラベル配列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getMonth</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						対象ロケールの文字列もしくは数字で月を表示する。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>月文字列（M|MM|MMM|MMMM）or月数字（M|MM）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMonthString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getMonthString</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						対象ロケールの文字列で月を表示する。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>月文字列（MM|MMM|MMMM）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTimezoneOffset"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getTimezoneOffset</b>()
+					
+					</div>
+					<div class="description">
+						タイムゾーンを出力する。(分単位)<br>Date型のgetTimezoneOffsetだが、符号を逆にして表示する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTimezoneOffsetTime"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getTimezoneOffsetTime</b>()
+					
+					</div>
+					<div class="description">
+						タイムゾーンを出力する。(ミリ秒単位)<br>Date型のgetTimezoneOffsetだが、符号を逆にして表示する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUTCDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getUTCDay</b>()
+					
+					</div>
+					<div class="description">
+						日を表示する。<br>Date型のgetUTCDate委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>日文字列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUTCMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getUTCMonth</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						対象ロケールの文字列もしくは数字で月を表示する。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>月文字列（M|MM|MMM|MMMM）or月数字（M|MM）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUTCMonthString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getUTCMonthString</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						対象ロケールの文字列で月を表示する。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>月文字列（MM|MMM|MMMM）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUTCWDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getUTCWDay</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						曜日を文字列もしくは数字で出力する。<br>Date型のgetUTCDay委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>曜日文字列（E|EE|EEE|EEEE）or曜日数字（e|ee）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUTCWDayString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getUTCWDayString</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						対象ロケールで曜日を出力する
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>曜日文字列（EE|EEE|EEEE）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getWDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getWDay</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						曜日を文字列もしくは数字で出力する。<br>Date型のgetDay委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>曜日文字列（E|EE|EEE|EEEE）or曜日数字（e|ee）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getWDayString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getWDayString</b>(min|abbr|normal)
+					
+					</div>
+					<div class="description">
+						対象ロケールで曜日を出力する
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>min|abbr|normal</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>曜日文字列（EE|EEE|EEEE）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getWeekOfMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getWeekOfMonth</b>()
+					
+					</div>
+					<div class="description">
+						対象月の週数を出力します。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getWeekOfYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getWeekOfYear</b>()
+					
+					</div>
+					<div class="description">
+						対象年の週数を出力します。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="isHoliday"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>isHoliday</b>()
+					
+					</div>
+					<div class="description">
+						休日判定します。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="isLeapYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>isLeapYear</b>()
+					
+					</div>
+					<div class="description">
+						閏年を判定します。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>閏年です(true)/閏年でない(false)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="roundDays"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>roundDays</b>()
+					
+					</div>
+					<div class="description">
+						現在設定されている日付から、引数の日付までの日数を出力する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="roundHolidays"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>roundHolidays</b>()
+					
+					</div>
+					<div class="description">
+						対象範囲の休日数を求める
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="roundWorkdays"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>roundWorkdays</b>()
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setDate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setDate</b>(パースできる日付文字列)
+					
+					</div>
+					<div class="description">
+						日付を設定します<br>パースできる文字列を指定します<br>setTimeの委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>パースできる日付文字列</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setDay</b>(日)
+					
+					</div>
+					<div class="description">
+						日を設定します。<br>setDateの委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>日</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFullYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFullYear</b>(fullYear)
+					
+					</div>
+					<div class="description">
+						完全な年を設定します。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>fullYear</b>
+									
+								</dt>
+								<dd>4桁の年</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLastWeekday"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLastWeekday</b>(wday)
+					
+					</div>
+					<div class="description">
+						対象月の最終N曜日を設定する
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>wday</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLocale"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLocale</b>(loc)
+					
+					</div>
+					<div class="description">
+						ロケール情報を再設定します。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>loc</b>
+									
+								</dt>
+								<dd>2文字のロケール情報</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setMonth</b>(month, label[option])
+					
+					</div>
+					<div class="description">
+						月を設定します.<br>ラベルの指定があれば、設定されている月の文字列で設定できます。<br>ラベルは<a href="../symbols/%24.Date.html#.langs">$.Date.langs</a>[this.defaultLocale][month][ラベル]より取得
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>month</b>
+									
+								</dt>
+								<dd>月</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>label[option]</b>
+									
+								</dt>
+								<dd>(min/abbr/normal)のいずれか</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setMonthEnd"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setMonthEnd</b>()
+					
+					</div>
+					<div class="description">
+						現在の年月から月末を設定する。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setNow"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setNow</b>()
+					
+					</div>
+					<div class="description">
+						現在時刻を再設定する。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setNumberWeekday"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setNumberWeekday</b>(number, wday, notNextMonth)
+					
+					</div>
+					<div class="description">
+						第X週N曜日を設定する
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>number</b>
+									
+								</dt>
+								<dd>週数(対象月の)を設定する</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>wday</b>
+									
+								</dt>
+								<dd>曜日(0～6で0=日曜日)を設定する</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Boolean}</span> <b>notNextMonth</b>
+									
+								</dt>
+								<dd>先月・翌月不可フラグ。trueであれば、先月・翌月に達した場合、初週・最終週に戻る。</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUTCDate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setUTCDate</b>(パースできる日付文字列)
+					
+					</div>
+					<div class="description">
+						日付を設定します<br>パースできる文字列を指定します<br>setUTCTimeの委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>パースできる日付文字列</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUTCDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setUTCDay</b>(日)
+					
+					</div>
+					<div class="description">
+						日を設定します。<br>setUTCDateの委譲メソッド
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>日</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUTCFullYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setUTCFullYear</b>(fullYear)
+					
+					</div>
+					<div class="description">
+						完全な年を設定します。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>fullYear</b>
+									
+								</dt>
+								<dd>4桁の年</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUTCMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setUTCMonth</b>(month, label[option])
+					
+					</div>
+					<div class="description">
+						月を設定します.<br>ラベルの指定があれば、設定されている月の文字列で設定できます。<br>ラベルは<a href="../symbols/%24.Date.html#.langs">$.Date.langs</a>[this.defaultLocale][month][ラベル]より取得
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>month</b>
+									
+								</dt>
+								<dd>月</dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>label[option]</b>
+									
+								</dt>
+								<dd>(min/abbr/normal)のいずれか</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUTCYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setUTCYear</b>(year)
+					
+					</div>
+					<div class="description">
+						年設定。<br>引数の年を設定します。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>year</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setYear"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setYear</b>(year)
+					
+					</div>
+					<div class="description">
+						年設定。<br>引数の年を設定します。<br>
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Number}</span> <b>year</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>this</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="syncNTP"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>syncNTP</b>()
+					
+					</div>
+					<div class="description">
+						ローカル時刻をNTPと同期して設定する。<br>json-time App使用。内部Ajaxは同期通信する。<br>jQuery.Deferred使用(done/fail/always)
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="toLocaleDateString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>toLocaleDateString</b>()
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="toLocaleString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>toLocaleString</b>()
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="toLocaleTimeString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>toLocaleTimeString</b>()
+					
+					</div>
+					<div class="description">
+						
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="toTimezoneOffsetString"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>toTimezoneOffsetString</b>()
+					
+					</div>
+					<div class="description">
+						タイムゾーンを（[+-]hhMM）形式の文字列で表示します
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>タイムゾーン文字列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".toWDayNumber"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.Date.</span><b>toWDayNumber</b>(曜日文字列, 対象ラベル（normal)
+					
+					</div>
+					<div class="description">
+						対象文字列から、対象の曜日に紐づく数字を返却します。
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>曜日文字列</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{String}</span> <b>対象ラベル（normal</b>
+									
+								</dt>
+								<dd>| abbr | min）</dd>
+							
+							</dl>
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Throws:</dt>
+							
+								<dt>
+									 <b></b>
+								</dt>
+								<dd>Error 第一引数がない場合</dd>
+							
+							</dl>
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>紐づく数値（日曜=0～土曜=6）</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="trancateDay"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>trancateDay</b>()
+					
+					</div>
+					<div class="description">
+						日付以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/01 00:00:00.000
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="trancateHours"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>trancateHours</b>()
+					
+					</div>
+					<div class="description">
+						時以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 00:00:00.000
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="trancateMilliseconds"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>trancateMilliseconds</b>()
+					
+					</div>
+					<div class="description">
+						ミリ秒以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 07:09:09.000
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="trancateMinutes"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>trancateMinutes</b>()
+					
+					</div>
+					<div class="description">
+						分以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 07:00:00.000
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="trancateMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>trancateMonth</b>()
+					
+					</div>
+					<div class="description">
+						月以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/01/01 00:00:00.000
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="trancateSeconds"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>trancateSeconds</b>()
+					
+					</div>
+					<div class="description">
+						秒以下の情報を削除する。<br>例）2014/07/07 07:09:09.999 -> 2014/07/07 07:09:00.000
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Aug 12 2014 09:00:06 GMT+0900 (JST)
+		</div>
+	</body>
+</html>

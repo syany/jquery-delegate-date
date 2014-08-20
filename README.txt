@@ -120,8 +120,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   - jquery.delegate[-min].js
   - jquery.delegate.polyfill[-min].js
   - jquery.delegate.date-1.0[-min].js
-  - (必要に応じて)jquery.delegate.date-(ja|en)[-min].js
-  - (必要に応じて)jquery.delegate.date[-min].js
+  - (If necessary)jquery.delegate.date-(ja|en)[-min].js
+  - (If necessary)jquery.delegate.date[-min].js
  -Overview
   The delegate Date class using $.Delegate.
   You can easy to use Date class in the same way.

@@ -7,13 +7,10 @@
         "Delegate",
         "date",
         "delegate",
-        "delegate date",
-        "delegate engine",
         "apply",
-        "util",
-        "delegate plugin"
+        "util"
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": {
         "name": "syany",
         "url": "https://github.com/syany"

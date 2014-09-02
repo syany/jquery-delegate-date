@@ -8,9 +8,16 @@
         "date",
         "delegate",
         "apply",
-        "util"
+        "util",
+        "format",
+        "holiday",
+        "workday",
+        "addMonth",
+        "addDay",
+        "setNumberWeekday",
+        "setMonthEnd"
     ],
-    "version": "1.0.5",
+    "version": "1.0.6",
     "author": {
         "name": "syany",
         "url": "https://github.com/syany"

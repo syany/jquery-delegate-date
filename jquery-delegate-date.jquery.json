@@ -10,7 +10,7 @@
         "apply",
         "util"
     ],
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": {
         "name": "syany",
         "url": "https://github.com/syany"
@@ -31,7 +31,7 @@
             "type": "GPLv3",
             "url": "https://github.com/syany/jquery-delegate-date/blob/master/License/COPYING"
         }
-        
+
     ],
     "bugs": "https://github.com/syany/jquery-delegate-date/issues",
     "homepage": "https://github.com/syany/jquery-delegate-date",

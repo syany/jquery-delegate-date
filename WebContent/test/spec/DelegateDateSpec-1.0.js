@@ -203,6 +203,7 @@
         }
       });
     });
+
     describe('#06 $.getLocale Test', function() {
       var brLang = null, lang = null, userLang = null;
       beforeEach(function() {
@@ -256,6 +257,7 @@
       beforeEach(function() {
         $.Date.removeInstance();
         $date = $.Date.getInstance();
+
         jTime = $.Date.langs.ja.time;
         mAbbr = $.Date.langs.ja.months.abbr;
         $.Date.langs.ja.time = undefined;
@@ -268,10 +270,10 @@
       });
 
       it("[+] normal localeFormat.", function() {
-        expect($date.getLocaleLabel('localeFormat')).toEqual('yyyy年MM月dd日(ee) HH:mm:ss UTCZ');
+        expect($date.setLocale('ja').getLocaleLabel('localeFormat')).toEqual('yyyy年MM月dd日(ee) HH:mm:ss UTCZ');
       });
       it("[+] subKey normal.", function() {
-        expect($date.getLocaleLabel('weekdays', 'min', true)).toEqual('日_月_火_水_木_金_土'.split('_'));
+        expect($date.setLocale('ja').getLocaleLabel('weekdays', 'min', true)).toEqual('日_月_火_水_木_金_土'.split('_'));
       });
       it("[+] subKey none.", function() {
         expect($date.getLocaleLabel('time', 'GGG', true)).toEqual(undefined);
@@ -294,21 +296,11 @@
     describe('#08 setMonth Test', function() {
       var $date = void (0);
 
-      var jTime = undefined;
-      var mAbbr = undefined;
-
       beforeEach(function() {
         $.Date.removeInstance();
         $date = $.Date.getInstance();
-        jTime = $.Date.langs.ja.time;
-        mAbbr = $.Date.langs.ja.months.abbr;
-        $.Date.langs.ja.time = undefined;
-        $.Date.langs.ja.months.abbr = undefined;
-
       });
       afterEach(function() {
-        $.Date.langs.ja.time = jTime;
-        $.Date.langs.ja.months.abbr = mAbbr;
       });
 
       // it("[+] setMonth param 12 throw Error.", function() {
@@ -320,14 +312,14 @@
       // }
       // });
       it("[+] setMonth 0 is 0.", function() {
-        expect($date.setMonth(0).getMonth()).toBe(0);
+        expect($date.setLocale('ja').setMonth(0).getMonth()).toBe(0);
       });
       it("[+] setMonth 11 is 11.", function() {
-        expect($date.setMonth(11).getMonth()).toBe(11);
+        expect($date.setLocale('ja').setMonth(11).getMonth()).toBe(11);
       });
       it("[+] setMonth param 12 throw Error.", function() {
         try {
-          $date.setMonth(3);
+          $date.setLocale('ja').setMonth(3);
           $date.setMonth(12);
           expect($date.getMonth()).toEqual(0);
         } catch (e) {
@@ -342,27 +334,27 @@
         }
       });
 
-      it("[+] setMonth min '1' is 1.", function() {
-        expect($date.setMonth(1, 'min').getMonth()).toBe(0);
+      it("[+] min '1' is 0 [$date.setMonth(1, 'min').getMonth()).toBe(0)].", function() {
+        expect($date.setLocale('ja').setMonth(1, 'min').getMonth()).toBe(0);
       });
-      it("[+] setMonth min '12' is 11.", function() {
-        expect($date.setMonth(12, 'min').getMonth()).toBe(11);
+      it("[+] min '12' is 11 [$date.setMonth(12, 'min').getMonth()).toBe(11)].", function() {
+        expect($date.setLocale('ja').setMonth(12, 'min').getMonth()).toBe(11);
       });
       it("[+] setMonth abbr 'Jan' is 1.", function() {
-        expect($date.setMonth('Jan', 'abbr').getMonth('abbr')).toBe('Jan');
+        expect($date.setLocale('en').setMonth('Jan', 'abbr').getMonth('abbr')).toBe('Jan');
       });
       it("[+] setMonth abbr 'Dec' is 11.", function() {
-        expect($date.setMonth('Dec', 'abbr').getMonth()).toBe(11);
+        expect($date.setLocale('en').setMonth('Dec', 'abbr').getMonth()).toBe(11);
       });
       it("[+] setMonth normal '１' is 0.", function() {
-        expect($date.setMonth('１', 'normal').getMonthString('normal')).toBe('１');
+        expect($date.setLocale('ja').setMonth('１', 'normal').getMonthString('normal')).toBe('１');
       });
       it("[+] setMonth normal '１２' is 11.", function() {
-        expect($date.setMonth('１２', 'normal').getMonth()).toBe(11);
+        expect($date.setLocale('ja').setMonth('１２', 'normal').getMonth()).toBe(11);
       });
       it("[+] setMonth abbr 'Jack' is not 1.", function() {
         $date.setMonth(8, 'min');
-        expect($date.setMonth('Jack', 'abbr').getMonth()).toBe(7);
+        expect($date.setLocale('en').setMonth('Jack', 'abbr').getMonth()).toBe(7);
       });
     });
 
@@ -395,10 +387,12 @@
         }
       });
       it("[+] setDate 2001/1/1", function() {
-        expect($date.setDate('2001/1/1').getDate()).toBe('Mon Jan 01 2001');
+        var d = new Date('Mon Jan 01 2001');
+        expect($date.setDate('2001/1/1').getDate()).toBe(d.toDateString());
       });
       it("[+] setDate Fri May 02 2014 02:00:00 GMT+0900.", function() {
-        expect($date.setDate('Fri May 02 2014 02:00:00 GMT+0900').getDate()).toBe('Fri May 02 2014');
+        var d = new Date('Fri May 02 2014');
+        expect($date.setDate('Fri May 02 2014 02:00:00 GMT+0900').getDate()).toBe(d.toDateString());
       });
       it("[+] setDate not 22222222/2/29", function() {
         expect($.Date.isDate($date.setDate('22222222/2/29').getDate())).toEqual(false);
@@ -438,13 +432,13 @@
           expect(e).toEqual(Error('argument Error.'));
         }
       });
-      it("[+] setDay 1/31 is 31", function() {
+      it("[+] 1/31 is 31 [$date.setMonth(0).setDay('31').getDay()).toBe(31)]", function() {
         expect($date.setMonth(0).setDay('31').getDay()).toBe(31);
       });
-      it("[+] setDay 2/30 is not 30.", function() {
+      it("[+] 12/30 is not 30.", function() {
         expect($date.setMonth(1).setDay('30').getDay()).not.toBe(30);
       });
-      it("[+] setDate 1/30 -1 is not 29", function() {
+      it("[+] 1/30 -1 is not 29 [$date.setMonth(0).setDay('30').setDay(-1).getDay()).not.toBe(29)]", function() {
         expect($date.setMonth(0).setDay('30').setDay(-1).getDay()).not.toBe(29);
       });
     });
@@ -459,13 +453,13 @@
 
       afterEach(function() {});
 
-      it("[+] setDate min '日' is 0.", function() {
+      it("[+] min '日' is 0 [$date.setDate('2014/07/13 00:00:00').getWDay()).toBe(0)].", function() {
         expect($date.setDate('2014/07/13 00:00:00').getWDay()).toBe(0);
       });
       it("[+] setDate min '土' is 6.", function() {
         expect($date.setDate('2014/07/12 00:00:00').getWDay()).toBe(6);
       });
-      it("[+] setDate abbr '火曜' is 火曜.", function() {
+      it("[+] abbr '火曜' is 火曜 [$date.setDate('2014/07/15 00:00:00').getWDay('abbr')).toBe('火曜')].", function() {
         expect($date.setDate('2014/07/15 00:00:00').getWDay('abbr')).toBe('火曜');
       });
       it("[+] setDate abbr '木曜' is 4.", function() {
@@ -477,7 +471,7 @@
       it("[+] setDate normal '水曜日' is 3.", function() {
         expect($date.setDate('2014/07/16 00:00:00').getWDay()).toBe(3);
       });
-      it("[+] setDate abbr 'Jack' is not 1.", function() {
+      it("[+] abbr 'Jack' is not 1 [$date.setDate('', 'abbr').getWDay()).toEqual(NaN)].", function() {
         $date.setDate('2014/07/14 00:00:00');
         expect($date.setDate('', 'abbr').getWDay()).toEqual(NaN);
       });
@@ -667,16 +661,19 @@
         expect($date.setNumberWeekday(3, 6).toDateString()).toBe('Sat Jul 26 2014');
       });
       it("[+] setNumberWeekday 2014 July 5th Sat is 2014/8/2", function() {
-        expect($date.setNumberWeekday(4, 6).toDateString()).toBe('Sat Aug 02 2014');
+        var d = new Date('Sat Aug 02 2014');
+        expect($date.setNumberWeekday(4, 6).toDateString()).toBe(d.toDateString());
       });
-      it("[+] setNumberWeekday 2014 Jan 0th Sat is 2013/12/28", function() {
-        expect($date.setDate('2014/1/28').setNumberWeekday(0, 6).toDateString()).toBe('Sat Jan 04 2014');
+      it("[+] setNumberWeekday 2014 Jan 0th Sat is 2014/01/04", function() {
+        var d = new Date('Sat Jan 04 2014');
+        expect($date.setDate('2014/1/28').setNumberWeekday(0, 6).toDateString()).toBe(d.toDateString());
       });
       it("[+] setNumberWeekday 2013 Dec 11th Sat is 2014/2/15", function() {
         expect($date.setDate('2013/12/28').setNumberWeekday(10, 6).toDateString()).toBe('Sat Feb 15 2014');
       });
-      it("[+] setNumberWeekday 2013 Dec 57th Sat is 2015/1/2", function() {
-        expect($date.setDate('2013/12/28').setNumberWeekday(56, 6).toDateString()).toBe('Sat Jan 03 2015');
+      it("[+] setNumberWeekday 2013 Dec 57th Sat is 2015/1/3", function() {
+        var d = new Date('Sat Jan 03 2015');
+        expect($date.setDate('2013/12/28').setNumberWeekday(56, 6).toDateString()).toBe(d.toDateString());
       });
       it("[+] setNumberWeekday 2014 July 5th Sat is 2014/7/26", function() {
         expect($date.setNumberWeekday(4, 6, 1).toDateString()).toBe('Sat Jul 26 2014');
@@ -685,7 +682,8 @@
 
         try {
           $date.setDate('2014/1/28').setNumberWeekday(0, 6, 1);
-          expect($date.toDateString()).toBe('Sat Jan 04 2014');
+          var d = new Date('Sat Jan 04 2014');
+          expect($date.toDateString()).toBe(d.toDateString());
         } catch (e) {
           expect(e).toEqual(Error('argument Error.'));
         }
@@ -789,7 +787,8 @@
       });
       it("[+] addMonth 2014 Jul 31 +1 Month is 2014/8/1(Fri)", function() {
         // $date.setDate('2014/7/30');
-        expect($date.addDay(1).toDateString()).toBe('Fri Aug 01 2014');
+        var d = new Date('Fri Aug 01 2014');
+        expect($date.addDay(1).toDateString()).toBe(d.toDateString());
       });
       it("[+] addMonth 2014 Aug 1 -1 Month is 2014/7/31(Thu)", function() {
         $date.setDate('2014/08/01');

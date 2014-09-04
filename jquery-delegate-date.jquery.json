@@ -1,7 +1,7 @@
 {
     "name": "jquery-delegate-date",
     "title": "jQuery Delegate Date",
-    "description": "jQuery plugin for advanced date class using delegate engine.",
+    "description": "Delegate class maker with Delegate Date class.",
     "keywords": [
         "Date",
         "Delegate",
@@ -17,7 +17,7 @@
         "setNumberWeekday",
         "setMonthEnd"
     ],
-    "version": "1.0.6",
+    "version": "1.0.7",
     "author": {
         "name": "syany",
         "url": "https://github.com/syany"

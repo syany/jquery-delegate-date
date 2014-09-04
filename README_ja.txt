@@ -1,6 +1,6 @@
 
-$.Delegate - JavaScript delegate engine.
-$.Date     - JavaScript Date delegate class.
+$.Delegate - JavaScript 委譲クラス作成プラグイン.
+$.Date     - JavaScript 委譲Dateクラス（オリジナルDateクラス＋α）.
 
 You may use any this project under the terms of the MIT or GPL Version 3 license.
 

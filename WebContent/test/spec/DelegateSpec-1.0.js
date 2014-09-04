@@ -90,5 +90,24 @@
         expect(DelegateMath.abs(-56)).toBe('String:56');
       });
     });
+
+    describe('#06 getDelegateClass Test', function() {
+      var DelegateDate = $.Delegate.inheritInstance(Date, function() {
+      });
+      var target = null;
+
+      beforeEach(function() {
+        target = DelegateDate.getInstance('2014/09/12');
+      });
+
+      it('[+] getInstance.', function() {
+        expect(DelegateDate.getInstance()).toBe(target);
+      });
+      it('[+] not equal new instance.', function() {
+        var d = new Date('2014/09/12');
+        expect(target.getDelegateClass()).toEqual(d);
+      });
+    });
+
   });
 }());

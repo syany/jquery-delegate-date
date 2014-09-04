@@ -301,6 +301,15 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
+								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.$.Date.format">$.Date.format</a></b>(fmt)
+								</div>
+								<div class="description">現在値もしくは第2引数以降で指定した日付のフォーマットを第一引数の文字列形式で出力</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
 								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.$.Date.isDate">$.Date.isDate</a></b>(arg01, month, day)
 								</div>
 								<div class="description">日付判定<br>対象引数が日付かどうかを判定する。<br>new Dateで使用可能な引数パターンをすべて使用できます。<br></div>
@@ -384,7 +393,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#clone">clone</a></b>()
 								</div>
-								<div class="description">対象$.Dateオブジェクトんクローンを作成する。</div>
+								<div class="description">対象$.Dateオブジェクトクローンを作成する。</div>
 							</td>
 						</tr>
 					
@@ -412,16 +421,7 @@ ul.inheritsList
 								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#format">format</a></b>(fmt)
 								</div>
 								<div class="description">現在の日付情報を指定したフォーマットで出力する。<br>パターンは、Java言語。SimpleDateFormatパターンに近い。
-<table> <tbody>             <tr>             <td>文字 </td>             <td>説明 </td>             <td>例 </td>             </tr>             <tr>             <td>G</td>             <td>紀元</td>             <td>AD</td>             </tr>             <tr>             <td>y</td>             <td>年</td>             <td> 1996, 96</td>             </tr>             <tr>             <td>M</td>             <td>月</td>             <td>July, Jul, 07</td>             </tr>             <tr>             <td>w</td>             <td>年における週</td>             <td> 27</td>             </tr>             <tr>             <td>W</td>             <td>月における週</td>             <td>2</td>             </tr>             <tr>             <td>D</td>             <td>年における日</td>             <td>189</td>             </tr>             <tr>             <td>d</td>             <td>月における日</td>             <td> 10</td>             </tr>             <tr>             <td>F</td>             <td>月における曜日</td>             <td>2</td>             </tr>             <tr>             <td>E</td>             <td>曜日</td>             <td> Tuesday, Tue</td>             </tr>             <tr>             <td>a</td>             <td>午前/午後</td>             <td>PM</td>             </tr>             <tr>             <td>H</td>             <td>一日における時(0～23)</td>             <td>0</td>             </tr>             <tr>             <td>k</td>             <td>一日における時(1～24)</td>             <td> 24</td>             </tr>             <tr>             <td>K</td>             <td>午前/午後の時(0～11)</td>             <td>0</td>             </tr>             <tr>             <td>h</td>             <td>午前/午後の時(1～12)</td>             <td> 12</td>             </tr>             <tr>             <td>m</td>             <td>分</td>             <td> 30</td>             </tr>             <tr>             <td>s</td>             <td>秒</td>             <td>55</td>             </tr>             <tr>             <td>S</td>             <td>ミリ秒</td>             <td>978</td>             </tr>             <tr>             <td>z</td>             <td>タイムゾーン</td>             <td>Pacific Standard Time, PST, GMT-08:00</td>             </tr>             <tr>             <td>Z</td>             <td>タイムゾーン</td>             <td>-0800</td>             </tr>             </tbody> </table>             <dl>             <dt>y</dt>             <dd>年数（yyyy：2013, yy:13)</dd>             </dl></div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&lt;static&gt; &nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont">$.Date.<b><a href="../symbols/%24.Date.html#.format">format</a></b>(fmt)
-								</div>
-								<div class="description">現在値もしくは第2引数以降で指定した日付のフォーマットを第一引数の文字列形式で出力</div>
+<table> <tbody>             <tr>             <td>文字 </td>             <td>説明 </td>             <td>例 </td>             </tr>             <tr>             <td>G</td>             <td>紀元</td>             <td>AD</td>             </tr>             <tr>             <td>y</td>             <td>年</td>             <td> 1996, 96</td>             </tr>             <tr>             <td>M</td>             <td>月</td>             <td>July, Jul, 07</td>             </tr>             <tr>             <td>w</td>             <td>年における週</td>             <td> 27</td>             </tr>             <tr>             <td>W</td>             <td>月における週</td>             <td>2</td>             </tr>             <tr>             <td>J</td>             <td>月の日数</td>             <td>189</td>             </tr>             <tr>             <td>D</td>             <td>年における日</td>             <td>189</td>             </tr>             <tr>             <td>d</td>             <td>月における日</td>             <td> 10</td>             </tr>             <tr>             <td>F</td>             <td>月における曜日</td>             <td>2</td>             </tr>             <tr>             <td>E</td>             <td>曜日</td>             <td> Tuesday, Tue</td>             </tr>             <tr>             <td>a</td>             <td>午前/午後</td>             <td>PM</td>             </tr>             <tr>             <td>H</td>             <td>一日における時(0～23)</td>             <td>0</td>             </tr>             <tr>             <td>k</td>             <td>一日における時(1～24)</td>             <td> 24</td>             </tr>             <tr>             <td>K</td>             <td>午前/午後の時(0～11)</td>             <td>0</td>             </tr>             <tr>             <td>h</td>             <td>午前/午後の時(1～12)</td>             <td> 12</td>             </tr>             <tr>             <td>m</td>             <td>分</td>             <td> 30</td>             </tr>             <tr>             <td>s</td>             <td>秒</td>             <td>55</td>             </tr>             <tr>             <td>S</td>             <td>ミリ秒</td>             <td>978</td>             </tr>             <tr>             <td>X</td>             <td>タイムスタンプ</td>             <td>1200023456</td>             </tr>             <tr>             <td>z</td>             <td>タイムゾーン</td>             <td>Pacific Standard Time, PST, GMT-08:00</td>             </tr>             <tr>             <td>Z</td>             <td>タイムゾーン</td>             <td>-0800</td>             </tr>             </tbody> </table></div>
 							</td>
 						</tr>
 					
@@ -449,6 +449,15 @@ ul.inheritsList
 								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getDay">getDay</a></b>()
 								</div>
 								<div class="description">日を表示する。<br>Date型のgetDate委譲メソッド</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#getDayOfMonth">getDayOfMonth</a></b>()
+								</div>
+								<div class="description">対象月の日数を出力します。</div>
 							</td>
 						</tr>
 					
@@ -637,7 +646,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#roundHolidays">roundHolidays</a></b>()
 								</div>
-								<div class="description">対象範囲の休日数を求める</div>
+								<div class="description">対象範囲の休日数を求める。</div>
 							</td>
 						</tr>
 					
@@ -646,7 +655,7 @@ ul.inheritsList
 							<td class="nameDescription">
 								<div class="fixedFont"><b><a href="../symbols/%24.Date.html#roundWorkdays">roundWorkdays</a></b>()
 								</div>
-								<div class="description"></div>
+								<div class="description">対象範囲の平日数を返却します。(rounddays - roundHolidays)</div>
 							</td>
 						</tr>
 					
@@ -1012,6 +1021,49 @@ ul.inheritsList
 				<div class="sectionTitle">
 					Method Detail
 				</div>
+				
+					<a name=".$.Date.format"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">$.Date.</span><b>$.Date.format</b>(fmt)
+					
+					</div>
+					<div class="description">
+						現在値もしくは第2引数以降で指定した日付のフォーマットを第一引数の文字列形式で出力
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>fmt</b>
+									
+								</dt>
+								<dd>出力形式</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>出力形式に沿った文字列</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
 				
 					<a name=".$.Date.isDate"> </a>
 					<div class="fixedFont">&lt;static&gt; 
@@ -1506,7 +1558,7 @@ ul.inheritsList
 					
 					</div>
 					<div class="description">
-						対象$.Dateオブジェクトんクローンを作成する。
+						対象$.Dateオブジェクトクローンを作成する。
 						
 						
 					</div>
@@ -1618,7 +1670,7 @@ ul.inheritsList
 					</div>
 					<div class="description">
 						現在の日付情報を指定したフォーマットで出力する。<br>パターンは、Java言語。SimpleDateFormatパターンに近い。
-<table> <tbody>             <tr>             <td>文字 </td>             <td>説明 </td>             <td>例 </td>             </tr>             <tr>             <td>G</td>             <td>紀元</td>             <td>AD</td>             </tr>             <tr>             <td>y</td>             <td>年</td>             <td> 1996, 96</td>             </tr>             <tr>             <td>M</td>             <td>月</td>             <td>July, Jul, 07</td>             </tr>             <tr>             <td>w</td>             <td>年における週</td>             <td> 27</td>             </tr>             <tr>             <td>W</td>             <td>月における週</td>             <td>2</td>             </tr>             <tr>             <td>D</td>             <td>年における日</td>             <td>189</td>             </tr>             <tr>             <td>d</td>             <td>月における日</td>             <td> 10</td>             </tr>             <tr>             <td>F</td>             <td>月における曜日</td>             <td>2</td>             </tr>             <tr>             <td>E</td>             <td>曜日</td>             <td> Tuesday, Tue</td>             </tr>             <tr>             <td>a</td>             <td>午前/午後</td>             <td>PM</td>             </tr>             <tr>             <td>H</td>             <td>一日における時(0～23)</td>             <td>0</td>             </tr>             <tr>             <td>k</td>             <td>一日における時(1～24)</td>             <td> 24</td>             </tr>             <tr>             <td>K</td>             <td>午前/午後の時(0～11)</td>             <td>0</td>             </tr>             <tr>             <td>h</td>             <td>午前/午後の時(1～12)</td>             <td> 12</td>             </tr>             <tr>             <td>m</td>             <td>分</td>             <td> 30</td>             </tr>             <tr>             <td>s</td>             <td>秒</td>             <td>55</td>             </tr>             <tr>             <td>S</td>             <td>ミリ秒</td>             <td>978</td>             </tr>             <tr>             <td>z</td>             <td>タイムゾーン</td>             <td>Pacific Standard Time, PST, GMT-08:00</td>             </tr>             <tr>             <td>Z</td>             <td>タイムゾーン</td>             <td>-0800</td>             </tr>             </tbody> </table>             <dl>             <dt>y</dt>             <dd>年数（yyyy：2013, yy:13)</dd>             </dl>
+<table> <tbody>             <tr>             <td>文字 </td>             <td>説明 </td>             <td>例 </td>             </tr>             <tr>             <td>G</td>             <td>紀元</td>             <td>AD</td>             </tr>             <tr>             <td>y</td>             <td>年</td>             <td> 1996, 96</td>             </tr>             <tr>             <td>M</td>             <td>月</td>             <td>July, Jul, 07</td>             </tr>             <tr>             <td>w</td>             <td>年における週</td>             <td> 27</td>             </tr>             <tr>             <td>W</td>             <td>月における週</td>             <td>2</td>             </tr>             <tr>             <td>J</td>             <td>月の日数</td>             <td>189</td>             </tr>             <tr>             <td>D</td>             <td>年における日</td>             <td>189</td>             </tr>             <tr>             <td>d</td>             <td>月における日</td>             <td> 10</td>             </tr>             <tr>             <td>F</td>             <td>月における曜日</td>             <td>2</td>             </tr>             <tr>             <td>E</td>             <td>曜日</td>             <td> Tuesday, Tue</td>             </tr>             <tr>             <td>a</td>             <td>午前/午後</td>             <td>PM</td>             </tr>             <tr>             <td>H</td>             <td>一日における時(0～23)</td>             <td>0</td>             </tr>             <tr>             <td>k</td>             <td>一日における時(1～24)</td>             <td> 24</td>             </tr>             <tr>             <td>K</td>             <td>午前/午後の時(0～11)</td>             <td>0</td>             </tr>             <tr>             <td>h</td>             <td>午前/午後の時(1～12)</td>             <td> 12</td>             </tr>             <tr>             <td>m</td>             <td>分</td>             <td> 30</td>             </tr>             <tr>             <td>s</td>             <td>秒</td>             <td>55</td>             </tr>             <tr>             <td>S</td>             <td>ミリ秒</td>             <td>978</td>             </tr>             <tr>             <td>X</td>             <td>タイムスタンプ</td>             <td>1200023456</td>             </tr>             <tr>             <td>z</td>             <td>タイムゾーン</td>             <td>Pacific Standard Time, PST, GMT-08:00</td>             </tr>             <tr>             <td>Z</td>             <td>タイムゾーン</td>             <td>-0800</td>             </tr>             </tbody> </table>
 						
 						
 					</div>
@@ -1640,49 +1692,6 @@ ul.inheritsList
 						
 						
 						
-						
-						
-						
-
-					<hr />
-				
-					<a name=".format"> </a>
-					<div class="fixedFont">&lt;static&gt; 
-					
-					
-					<span class="light">$.Date.</span><b>format</b>(fmt)
-					
-					</div>
-					<div class="description">
-						現在値もしくは第2引数以降で指定した日付のフォーマットを第一引数の文字列形式で出力
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<b>fmt</b>
-									
-								</dt>
-								<dd>出力形式</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-							<dl class="detailList">
-							<dt class="heading">Returns:</dt>
-							
-								<dd>出力形式に沿った文字列</dd>
-							
-							</dl>
 						
 						
 						
@@ -1772,6 +1781,31 @@ ul.inheritsList
 								<dd>日文字列</dd>
 							
 							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDayOfMonth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getDayOfMonth</b>()
+					
+					</div>
+					<div class="description">
+						対象月の日数を出力します。
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
 						
 						
 						
@@ -2481,7 +2515,7 @@ ul.inheritsList
 					
 					</div>
 					<div class="description">
-						対象範囲の休日数を求める
+						対象範囲の休日数を求める。
 						
 						
 					</div>
@@ -2506,7 +2540,7 @@ ul.inheritsList
 					
 					</div>
 					<div class="description">
-						
+						対象範囲の平日数を返却します。(rounddays - roundHolidays)
 						
 						
 					</div>
@@ -3509,7 +3543,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Aug 12 2014 09:00:06 GMT+0900 (JST)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Fri Sep 05 2014 01:29:23 GMT+0900 (JST)
 		</div>
 	</body>
 </html>

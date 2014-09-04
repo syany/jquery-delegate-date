@@ -31,71 +31,76 @@
   };
 
   // インスタンス基底プロパティ、メソッド群
-  $.extend($.Delegate.prototype,
-    {
-      /** @lends $.Delegate# */
+  $.extend($.Delegate.prototype, {
+    /** @lends $.Delegate# */
+    /**
+     * @type 委譲対象クラス
+     */
+    delegateClass : Function,
+    /**
+     * $.Delegateクラスオブジェクトを初期化します。 <br>
+     * ・委譲メソッドを生成します。
+     */
+    constructor_ : function() {
+      // 複数の引数パターンに対応するために、new, bindを使用する
+      this._DELEGATE_OBJ_ = this.newDelegateInstance.apply(this, arguments || []);
       /**
-       * @type 委譲対象クラス
+       * 委譲メソッドを作成します。
        */
-      delegateClass : Function,
-      /**
-       * $.Delegateクラスオブジェクトを初期化します。 <br>
-       * ・委譲メソッドを生成します。
-       */
-      constructor_ : function() {
-        // 複数の引数パターンに対応するために、new, bindを使用する
-        this._DELEGATE_OBJ_ = this.newDelegateInstance.apply(this, arguments || []);
-        /**
-         * 委譲メソッドを作成します。
-         */
-        // 委譲元Dateのインスタンスメソッド、プロパティのリストを取得し、リスト分繰り返す。
-        var propertyNames = this.getPropertyNames(this.delegateClass.prototype);
-        for (var i = 0, p = propertyNames[i]; (p = propertyNames[i]); i++) {
-          (function(that){
-            var propertyName = p;
-            $.Delegate.delegateProperty(that, that._DELEGATE_OBJ_, propertyName);
-          })(this);
-        }
-      },
-      /**
-       * 対象のプロパティ名称をリストで返却します。
-       *
-       * @param {Object}
-       *        source
-       * @MemberOf $.Delegate#
-       */
-      getPropertyNames : function(source) {
-        return (!!Object.getOwnPropertyNames) ? Object.getOwnPropertyNames(source) : [];
-      },
-      /**
-       * 委譲クラスのメソッドを実行する。
-       * @param {String} method 委譲クラスのメソッド名
-       * @param {Array} args 委譲メソッドノ］引数配列
-       */
-      delegateMethod: function(delegateMethod, args) {
-        return this._DELEGATE_OBJ_[delegateMethod].apply(this._DELEGATE_OBJ_, args || []);
-      },
-      /**
-       * 委譲クラスをインスタンス化
-       * @return インスタンス化したオブジェクト
-       */
-      newDelegateInstance : function() {
-        //return new (this.delegateClass.bind.apply(this.delegateClass, [ undefined ].concat([].slice.call(arguments))))();
-        return (!!arguments[0] && arguments[0] instanceof Array) ?
-          new (this.delegateClass.bind.apply(this.delegateClass, [ undefined ].concat([].slice.call(arguments[0]))))():
-          new (this.delegateClass.bind.apply(this.delegateClass, [ undefined ].concat([].slice.call(arguments))))();
+      // 委譲元Dateのインスタンスメソッド、プロパティのリストを取得し、リスト分繰り返す。
+      var propertyNames = this.getPropertyNames(this.delegateClass.prototype);
+      for (var i = 0, p = propertyNames[i]; (p = propertyNames[i]); i++) {
+        (function(that) {
+          var propertyName = p;
+          $.Delegate.delegateProperty(that, that._DELEGATE_OBJ_, propertyName);
+        })(this);
       }
-    });
+    },
+    /**
+     * 対象のプロパティ名称をリストで返却します。
+     *
+     * @param {Object}
+     *        source
+     * @MemberOf $.Delegate#
+     */
+    getPropertyNames : function(source) {
+      return (!!Object.getOwnPropertyNames) ? Object.getOwnPropertyNames(source) : [];
+    },
+    /**
+     * 委譲クラスのメソッドを実行する。
+     * @param {String} method 委譲クラスのメソッド名
+     * @param {Array} args 委譲メソッドノ］引数配列
+     */
+    delegateMethod : function(delegateMethod, args) {
+      return this._DELEGATE_OBJ_[delegateMethod].apply(this._DELEGATE_OBJ_, args || []);
+    },
+    /**
+     * 委譲クラスをインスタンス化
+     * @return インスタンス化したオブジェクト
+     */
+    newDelegateInstance : function() {
+      //return new (this.delegateClass.bind.apply(this.delegateClass, [ undefined ].concat([].slice.call(arguments))))();
+      return (!!arguments[0] && arguments[0] instanceof Array) ? new (this.delegateClass.bind.apply(this.delegateClass, [ undefined ].concat([].slice
+        .call(arguments[0]))))() : new (this.delegateClass.bind.apply(this.delegateClass, [ undefined ].concat([].slice.call(arguments))))();
+    },
+    /**
+     * 委譲元インスタンスを返却します。<br>
+     *
+     * @return {Object} 委譲元のインスタンス
+     */
+    getDelegateClass : function() {
+      return this._DELEGATE_OBJ_;
+    }
+  });
 
   // インスタンス基底プロパティ、メソッド群
   $.extend($.Delegate, {
     /**
      *
      */
-    newInstance: function(sourceClass) {
-      return (!!arguments[1] && arguments[1] instanceof Array) ?
-        new (sourceClass.bind.apply(sourceClass, [ undefined ].concat([].slice.call(arguments[1]))))() :
-        new (sourceClass.bind.apply(sourceClass, [].slice.call(arguments)))();
+    newInstance : function(sourceClass) {
+      return (!!arguments[1] && arguments[1] instanceof Array) ? new (sourceClass.bind.apply(sourceClass, [ undefined ].concat([].slice
+        .call(arguments[1]))))() : new (sourceClass.bind.apply(sourceClass, [].slice.call(arguments)))();
     },
     /** @lends $.Delegate */
     /**

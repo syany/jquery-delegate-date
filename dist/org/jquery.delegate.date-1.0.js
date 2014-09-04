@@ -154,6 +154,9 @@
     hh : function() {
       return leftZeroFill_((this.getHours() % _MINUTES_BY_HALF_HOURS_ || _MINUTES_BY_HALF_HOURS_) % 100, 2);
     },
+    J : function() {
+      return this.getDayOfMonth();
+    },
     K : function() {
       return this.getHours() + 1;
     },
@@ -681,6 +684,11 @@
      *              <td>2</td>
      *              </tr>
      *              <tr>
+     *              <td>J</td>
+     *              <td>月の日数</td>
+     *              <td>189</td>
+     *              </tr>
+     *              <tr>
      *              <td>D</td>
      *              <td>年における日</td>
      *              <td>189</td>
@@ -758,7 +766,7 @@
      *              </tbody> </table>
      */
     format : function(fmt) {
-      var result = fmt.replace(/(a|G|yyyyy?|yy?|MM?M?M?|w|W|DDD|D|dd?|F|f|ee?e?|EE?E?|HH?|hh?|KK?|kk?|mm?|ss?|SSS|S|X|Z|z)/g, (function(str, p1) {
+      var result = fmt.replace(/(a|G|yyyyy?|yy?|MM?M?M?|w|W|DDD|D|dd?|F|f|ee?e?|EE?E?|HH?|hh?|J|KK?|kk?|mm?|ss?|SSS|S|X|Z|z)/g, (function(str, p1) {
         return formatTokenFunctions_[p1].apply(this, arguments);
       }).bind(this));
       return result;
@@ -886,6 +894,12 @@
     getDayOfYear : function() {
       var targetDateObj = getTmp$Date_(0).setTime(this.getTime()).setDay(1).setMonth(0);
       return Math.ceil((this.getTime() - targetDateObj.getTime()) / _ONE_DAY_);
+    },
+    /**
+     * 対象月の日数を出力します。
+     */
+    getDayOfMonth : function() {
+      return this.lastDayList[this.getMonth()];
     },
     /**
      * 対象月の週数を出力します。
@@ -1347,6 +1361,7 @@
   $.Date.prototype.getWYear = $.Date.prototype.getWeekOfYear;
   $.Date.prototype.getDayOfWeek = $.Date.prototype.getWDay;
   $.Date.prototype.parse = $.Date.prototype.setDate;
+  $.Date.prototype.getDelegateDate = $.Date.prototype.getDelegateClass;
   window.DDate = $.Date;
 })(jQuery, window);
 /*

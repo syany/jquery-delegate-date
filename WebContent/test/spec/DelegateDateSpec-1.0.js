@@ -990,6 +990,9 @@
       it("[+] $.Date.format yyyy/MM/dd is 2014/01/01", function() {
         expect($.Date.format('yyyy/MM/dd', 2014, 0, 1)).toBe('2014/01/01');
       });
+      it("[+] $.Date.format J(2014/01/01) is 31", function() {
+        expect($.Date.format('J', 2014, 0, 1)).toBe('31');
+      });
     });
 
     describe('#27 toLocaleString Test', function() {
@@ -1262,6 +1265,29 @@
 //      it("[+] roundDays 2014/08/01 to 07/31 is 1", function() {
 //        expect($date.roundDays('2014/07/31')).toBe(1);
 //      });
+    });
+
+
+    describe('#36 getDelegateDate Test', function() {
+
+      beforeEach(function() {
+        $.Date.removeInstance();
+        $date = $.Date.getInstance('2014/08/01 22:22:35');
+      });
+      afterEach(function() {
+      });
+
+      it("[+] getDelegateDate is function", function() {
+        expect($.isFunction($date.getDelegateDate)).toBe(true);
+      });
+      it("[+] getDelegateDate is delegate Object(2014/08/01)", function() {
+        var d = new Date('2014/08/01 22:22:35');
+        expect($date.getDelegateDate()).toEqual(d);
+      });
+      it("[+] Date.setTime() to change delegate object [$date.setTime(d.getTime()).getDelegateDate()).toEqual(d)].", function() {
+        var d = new Date('2014/08/12 22:22:35');
+        expect($date.setTime(d.getTime()).getDelegateDate()).toEqual(d);
+      });
     });
   });
 
